@@ -7,10 +7,7 @@
       <span class="leading-relaxed tracking-wide uppercase font-bold">
         <slot name="title" />
       </span>
-      <n-icon
-        icon="chevron-right"
-        :class="open ? 'transform rotate-90' : ''"
-      />
+      <n-icon icon="chevron-right" :class="open ? 'transform rotate-90' : ''" />
     </disclosure-button>
     <transition
       enter-active-class="transition duration-100 ease-out"

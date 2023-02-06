@@ -225,16 +225,12 @@ const state = reactive({
       ]
     },
     color: '#1F2937'
-  },
-  isLoading: {
-    pdf: false
   }
 })
 
 const resume = computed(() => state.resume)
 const model = computed(() => state.model)
 const theme = computed(() => state.theme)
-const isLoading = computed(() => state.isLoading)
 
 const addItem = (type) => {
   state.resume[type].push({
@@ -298,38 +294,18 @@ const clearState = (key, customPath = resume) => {
   }
 }
 
-const addMe = () => {
+const addNicoBocq = () => {
   Object.assign(state.resume, nicoBocq)
 }
 
 const exportToPdf = () => {
-  state.isLoading.pdf = true
-  const url = import.meta.env.DEV
-    ? {
-        endPoint: 'http://localhost:4000/pdf/',
-        preview: 'http://localhost:3000/preview'
-      }
-    : {
-        endPoint: 'https://cvite-pdfserver.herokuapp.com/pdf/',
-        preview: 'https://cvite.netlify.app/preview'
-      }
-  axios.post(url.endPoint, { url: url.preview, resume: state.resume, model: state.model, theme: state.theme }, {
+  axios.post('https://cvite-pdfserver.herokuapp.com/pdf/', { resume: state.resume, model: state.model, theme: state.theme }, {
     responseType: 'arraybuffer'
   })
     .then((res) => {
       const file = new Blob([res.data], { type: 'application/pdf' })
       const fileURL = URL.createObjectURL(file)
-      const link = document.createElement('a')
-      link.href = fileURL
-      link.download = `${state.resume.firstName}-${state.resume.lastName}.pdf`
-      link.click()
-      // window.open(fileURL)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
-    .finally(() => {
-      state.isLoading.pdf = false
+      window.open(fileURL)
     })
 }
 
@@ -337,11 +313,10 @@ export {
   resume,
   model,
   theme,
-  isLoading,
   addItem,
   removeItem,
   clearState,
-  addMe,
+  addNicoBocq,
   isEmpty,
   setNewResume,
   saveItem,

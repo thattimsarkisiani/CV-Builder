@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-2 print:space-y-4">
-    <div class="font-bold text-plg print:text-clg">
+    <div class="font-bold text-plg print:text-xl">
       {{ model[resumeKey].title }}
     </div>
     <transition-group
@@ -10,27 +10,27 @@
       <div
         v-for="item in resume[resumeKey]"
         :key="item.id"
-        class="text-pxs print:text-csm print:leading-4"
+        class="text-pxs print:text-sm print:leading-4 space-y-1"
         style="break-inside: avoid;"
       >
         <template v-if="resumeKey === 'experience'">
-          <div class="text-gray-800 text-psm print:text-csm font-bold">
-            {{ item.title }}
+          <div class="text-gray-800 text-psm print:text-sm font-bold">
+            {{ item.title }}, {{ item.company }}
           </div>
           <div class="text-gray-600 font-semibold">
-            {{ item.beginDate }}<span v-if="!!item.endDate"> - {{ item.endDate }}</span>, {{ item.company }}
+            {{ item.beginDate }}<span v-if="!!item.endDate"> - {{ item.endDate }}</span>
           </div>
           <div class="text-gray-800 whitespace-pre-line">
             {{ item.description }}
           </div>
         </template>
         <template v-else-if="resumeKey === 'education'">
-          <div class="text-gray-800 text-psm print:text-csm font-bold">
+          <div class="text-gray-800 text-psm print:text-sm font-bold">
             {{ item.degree }}
           </div>
           <div class="text-gray-600">
             {{ item.beginDate }}<span v-if="!!item.endDate"> / {{ item.endDate }}</span>
-            {{ item.school }}, ({{ item.city }})
+            {{ item.school }} ({{ item.city }})
           </div>
           <div class="text-gray-800 whitespace-pre-line">
             {{ item.description }}
@@ -41,7 +41,7 @@
         </template>
         <template v-else-if="resumeKey === 'link'">
           <a
-            :href="item.url"
+            href="{{ item.url }}"
             class="text-white block"
           >
             {{ item.label }}
