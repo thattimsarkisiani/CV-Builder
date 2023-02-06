@@ -1,5 +1,5 @@
 import { computed, reactive } from 'vue'
-import { nicoBocq } from '../assets/nicoBocq'
+import { sample } from '../assets/sample'
 import { i18n } from '../composables/i18n'
 import axios from 'axios'
 const { t } = i18n.global
@@ -294,8 +294,8 @@ const clearState = (key, customPath = resume) => {
   }
 }
 
-const addNicoBocq = () => {
-  Object.assign(state.resume, nicoBocq)
+const addsample = () => {
+  Object.assign(state.resume, sample)
 }
 
 const exportToPdf = () => {
@@ -316,7 +316,7 @@ export {
   addItem,
   removeItem,
   clearState,
-  addNicoBocq,
+  addsample,
   isEmpty,
   setNewResume,
   saveItem,

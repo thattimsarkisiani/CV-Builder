@@ -1,50 +1,50 @@
 import { avatar } from './avatar'
 
-export const nicoBocq = {
-  firstName: 'Nicolas',
-  lastName: 'Bocquet',
-  title: 'Développeur Front-End',
+export const sample = {
+  firstName: 'Mandy',
+  lastName: 'Smith',
+  title: 'Senior Front-End Developer',
   summary:
-    "20 ans d'expériences sur le web et toujours la même passion : mettre en forme les données.",
-  email: 'nicolas.fow@gmail.com',
-  phone: '06 21 02 31 65',
-  address: '29 rue Wulfram Puget - 13008 Marseille',
+    "My name is Mandy Smith. I am a passionate, over-achieving Web Developer who believes the programmer's #1 job is making life easier.",
+  email: 'm.smith@immersive.ge',
+  phone: '+995 XXX XX XX XX',
+  address: 'Tbilisi, Georgia',
   avatar: avatar,
   more: null,
   link: [
     {
       id: 1,
       label: 'gitHub',
-      url: 'https://github.com/NicoBocq'
+      url: 'https://github.com/'
     },
     {
       id: 2,
       label: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bocquetnicolas/'
+      url: 'https://www.linkedin.com/'
     },
     {
       id: 3,
       label: 'Twitter',
-      url: 'https://twitter.com/_nicolasbocquet'
+      url: 'https://twitter.com/'
     }
   ],
   experience: [
-    // {
-    //   id: 1,
-    //   beginDate: '2021',
-    //   endDate: '',
-    //   title: 'Front End Lead',
-    //   company: 'Oparédo',
-    //   description: 'Développement d\'une librairie de composants (Vue, Tailwind, Storybook).\n' +
-    //     'Tests unitaires et fonctionnels\n' +
-    //     'Spécifications UX/UI'
-    // },
+    {
+      id: 1,
+      beginDate: '2023',
+      endDate: '',
+      title: 'Front End Lead',
+      company: 'Immersive LLC',
+      description: 'Développement d\'une librairie de composants (Vue, Tailwind, Storybook).\n' +
+        'Tests unitaires et fonctionnels\n' +
+        'Spécifications UX/UI'
+    },
     {
       id: 2,
       beginDate: '2020',
       endDate: '',
-      title: 'Développeur Front-End',
-      company: 'Internethic',
+      title: 'Deputy Director Parks Department',
+      company: 'Company LLC',
       description:
         "Développement d'une app BtoB : \n" +
         '- développement de composants (UI et custom) et de stores : Vuejs, Vuex, Tailwind, Storybook\n' +
@@ -79,50 +79,50 @@ export const nicoBocq = {
       description:
         'En charge de projets numériques : web, mobiles, applications, réseaux sociaux...'
     },
-    {
-      id: 6,
-      beginDate: '2007',
-      endDate: '2010',
-      title: 'Webmaster',
-      company: 'La Provence',
-      description:
-        'Développement et intégration, accompagnement de la rédaction au numérique.'
-    },
-    {
-      id: 7,
-      beginDate: '2005',
-      endDate: '2007',
-      title: 'Intégrateur',
-      company: '3SC Global Services',
-      description: 'HTML, CSS, JS'
-    },
-    {
-      id: 8,
-      beginDate: '2001',
-      endDate: '2004',
-      title: 'Développeur fullstack',
-      company: 'Freelance',
-      description:
-        'Création de sites web : graphisme, développement et intégration'
-    }
+    // {
+    //   id: 6,
+    //   beginDate: '2007',
+    //   endDate: '2010',
+    //   title: 'Webmaster',
+    //   company: 'La Provence',
+    //   description:
+    //     'Développement et intégration, accompagnement de la rédaction au numérique.'
+    // },
+    // {
+    //   id: 7,
+    //   beginDate: '2005',
+    //   endDate: '2007',
+    //   title: 'Intégrateur',
+    //   company: '3SC Global Services',
+    //   description: 'HTML, CSS, JS'
+    // },
+    // {
+    //   id: 8,
+    //   beginDate: '2001',
+    //   endDate: '2004',
+    //   title: 'Développeur fullstack',
+    //   company: 'Freelance',
+    //   description:
+    //     'Création de sites web : graphisme, développement et intégration'
+    // }
   ],
   education: [
     {
       id: 1,
-      beginDate: '2019',
+      beginDate: '2023',
       endDate: '',
-      school: 'Le Wagon',
-      degree: 'Développeur Fullstack',
-      city: 'Marseille',
+      school: 'Immersive Academy',
+      degree: 'Full-stack Web Developer',
+      city: 'Tbilisi',
       description: 'Ruby, Ruby & Rails, React'
     },
     {
       id: 2,
-      beginDate: '1999',
-      endDate: '2001',
-      school: 'Université des Pays du Vaucluse',
-      degree: 'MST Communication : conception multimédias',
-      city: 'Avignon',
+      beginDate: '2019',
+      endDate: '2022',
+      school: 'Immersive University',
+      degree: 'MST Communication ',
+      city: 'Tbilisi',
       description: ''
     }
     // {
@@ -143,11 +143,7 @@ export const nicoBocq = {
     { id: 8, label: 'Datavisualisation : D3, OpenLayers **' },
     { id: 3, label: 'Figma, Adobe XD **' },
     { id: 5, label: 'Storybook, Bit ***' },
-    {
-      id: 6,
-      label: 'Tests unitaires et fonctionnels (Behat, Gherkin, Cypress) **'
-    },
-    { id: 7, label: 'Git **' }
+    { id: 6, label: 'Git **' }
   ],
-  hobby: 'Side projects, histoire, sports (course à pied, football)'
+  hobby: 'Side projects, history, sports'
 }

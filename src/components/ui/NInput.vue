@@ -32,7 +32,7 @@
     <div
       v-if="required"
       :class="[
-        isEmpty ? 'text-gray-100' : 'text-gray-300',
+        isEmpty ? 'text-gray-100' : 'text-green-500',
         type === 'textarea' ? 'top-2' : 'flex items-center',
       ]"
       class="absolute inset-y-0 right-0 pr-3 pointer-events-none font-semibold"

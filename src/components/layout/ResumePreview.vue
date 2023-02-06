@@ -161,3 +161,24 @@ export default {
 <!--}-->
 
 <!--</style>-->
+
+
+/* hide scrollbar but allow scrolling */
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* other styling */
+* {
+  background-color: #EAF0F6;
+  color: #2D3E50;
+  font-family: 'Avenir';
+  font-size: 26px;
+  font-weight: bold;
+}
