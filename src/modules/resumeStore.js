@@ -218,13 +218,15 @@ const state = reactive({
   theme: {
     options: {
       colors: [
-        { name: 'grey', value: '#3730A3' },
-        { name: 'indigo', value: '#1F2937' },
-        { name: 'pink', value: '#9D174D' },
-        { name: 'red', value: '#991B1B' }
+        { name: 'dark', value: '#121E24' },
+        { name: 'sky', value: '#4EABE9' },
+        { name: 'mint', value: '#73BDAF' },
+        { name: 'sunflower', value: '#EBB835' },
+        { name: 'raspberry', value: '#D8556D' },
+        { name: 'ocean', value: '#2D63D3' },
       ]
     },
-    color: '#1F2937'
+    color: '#121E24'
   }
 })
 

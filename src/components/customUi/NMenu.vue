@@ -3,18 +3,18 @@
     as="div"
   >
     <div class="relative">
-      <div class="inline-flex shadow-sm rounded-md divide-x divide-brand-600">
-        <div class="relative z-0 inline-flex shadow-sm rounded-lg divide-x divide-brand-600">
+      <div class="inline-flex shadow-sm rounded-xl divide-x divide-brand-600">
+        <div class="relative z-0 inline-flex shadow-sm rounded-xl divide-x divide-brand-600">
           <button
-            class="relative inline-flex items-center text-sm font-medium flex space-x-2 py-2 pl-3 pr-4 border border-transparent rounded-l-md shadow-sm text-white"
+            class="relative inline-flex items-center text-sm font-medium flex space-x-2 py-2 pl-3 pr-4 border border-transparent rounded-l-lg shadow-sm text-white"
             :disabled="!isValidResume"
-            :class="isValidResume ? 'bg-brand-500 hover:bg-brand-600 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-brand-500' : 'cursor-default bg-brand-400'"
+            :class="isValidResume ? 'bg-brand-500 hover:bg-brand-600 focus:outline-none' : 'cursor-default bg-brand-400'"
             @click="exportToPdf"
           >
             <n-icon icon="download" />
             <span>{{ t('ui.download') }}</span>
           </button>
-          <ListboxButton class="relative inline-flex items-center bg-brand-500 p-2 rounded-l-none rounded-r-md text-sm font-medium text-white hover:bg-brand-600 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-brand-500">
+          <ListboxButton class="relative outline: none; inline-flex items-center bg-brand-500 p-2 rounded-l-none rounded-r-lg text-sm font-medium text-white hover:bg-brand-600 focus:outline-none ">
             <n-icon icon="chevron-down" />
           </ListboxButton>
         </div>
@@ -26,7 +26,7 @@
         leave-to-class="opacity-0"
       >
         <ListboxOptions
-          class="origin-top-right absolute z-10 right-0 mt-2 w-72 rounded-md shadow-lg overflow-hidden bg-white divide-y divide-gray-200 ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="origin-top-right absolute z-10 right-0 mt-2 w-72 rounded-lg shadow-lg overflow-hidden bg-white divide-y divide-gray-200 focus:outline-none"
         >
           <ListboxOption
             v-for="option in items"
@@ -50,7 +50,7 @@
           <ListboxOption class="p-4">
             <RadioGroup
               v-model="locale"
-              class="space-y-3"
+              class="space-y-4"
             >
               <RadioGroupLabel class="text-sm text-gray-500 space-x-2 flex items-center">
                 <n-icon icon="translate" />
@@ -65,7 +65,7 @@
                   :value="option.value"
                 >
                   <div
-                    class="cursor-pointer border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1"
+                    class="cursor-pointer border rounded-lg py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                     :class="[
                       checked ? 'bg-brand-600 border-transparent text-white hover:bg-brand-700' : 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50']"
                   >
@@ -107,14 +107,18 @@ export default {
 
     const items = computed(() => {
       return [
-        { label: t('ui.startOver'), icon: 'refresh', action: setNewResume },
-        { label: t('immersive.ge'), icon: 'question-mark-circle', action: addsample },
+        { label: t('ui.startOver'), icon: 'trash-outline', action: setNewResume },
+        { label: t('ui.fill'), icon: 'lightning-bolt', action: addsample },
+        { label: t('ui.career'), icon: 'globe', },
         // { label: t('ui.about'), icon: 'question-mark-circle', action: addsample }
       ]
     })
+
+    const url = "https:/google.com"
+
     const languages = [
-      { label: 'EN', value: 'en' },
-      { label: 'GE', value: 'ge' }
+      { label: 'GEO', value: 'ge' },
+      { label: 'ENG', value: 'en' }
     ]
 
     return {

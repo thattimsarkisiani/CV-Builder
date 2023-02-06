@@ -10,16 +10,18 @@
     "replace": "ჩანაცვლება",
     "switchLang": "EN",
     "about": "პროექტის შესახებ",
-    "startOver": "გადატვირთვა",
+    "startOver": "გასუფთავება",
+    "fill": "შევსების მაგალითი",
     "design": "დიზაინი",
     "content": "ინფორმაცია",
-    "languageLabel": "ენის შეცვლა"
+    "languageLabel": "ენის შეცვლა",
+    "career": "კარიერული ცენტრი"
   },
   "resume": {
     "firstName": "სახელი",
     "lastName": "გვარი",
-    "title": "სათაური",
-    "summary": "აღწერა",
+    "title": "თანამდებობა",
+    "summary": "წერილი",
     "email": "ელ. ფოსტა",
     "phone": "ტელეფონი",
     "address": "მისამართი",
@@ -31,7 +33,7 @@
         "skills": "უნარები",
         "education": "განათლება",
         "hobbies": "ჰობი",
-        "photo": "სურათი"
+        "photo": "პროფილის სურათი"
       },
       "fields": {
         "beginDate": "დაწყების თარიღი",

@@ -11,9 +11,11 @@
     "switchLang": "FR",
     "about": "About",
     "startOver": "Start Over",
+    "fill": "Filling Example",
     "design": "Design",
     "content": "Content",
-    "languageLabel": "Change Language"
+    "languageLabel": "Change Language",
+    "career": "Career Hub"
   },
   "resume": {
     "firstName": "First Name",

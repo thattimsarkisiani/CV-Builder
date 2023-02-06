@@ -1,23 +1,26 @@
 <template>
   <div class="space-y-6 py-6">
+    <n-box-form key="photo">
+      <n-upload v-model="resume.avatar" />
+    </n-box-form>
     <form-section
       key="main"
       state-key="main"
       :is-list="false"
       :has-title="false"
     />
-    <n-box-form key="photo">
+    <!-- <n-box-form key="photo">
       <n-upload v-model="resume.avatar" />
-    </n-box-form>
-    <form-section
-      key="experience"
-      state-key="experience"
-      title-key="title"
-    />
+    </n-box-form> -->
     <form-section
       key="education"
       state-key="education"
       title-key="degree"
+    />
+    <form-section
+      key="experience"
+      state-key="experience"
+      title-key="title"
     />
     <form-section
       key="link"
