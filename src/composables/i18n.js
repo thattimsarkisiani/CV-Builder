@@ -1,5 +1,5 @@
 import en from '../locales/en.json'
-import fr from '../locales/fr.json'
+import ge from '../locales/ge.json'
 import { createI18n } from 'vue-i18n'
 
 const i18n = createI18n({
@@ -10,7 +10,7 @@ const i18n = createI18n({
   messages:
     {
       en,
-      fr
+      ge
     }
 })
 

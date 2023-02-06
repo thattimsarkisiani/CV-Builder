@@ -1,7 +1,8 @@
 <template>
   <RadioGroup v-model="theme.color">
     <RadioGroupLabel class="block text-sm font-medium text-gray-500">
-      Choose the main color
+      აირჩიე მთავარი ფერი
+      <!-- {{ t('languageLabel') }} -->
     </RadioGroupLabel>
     <div class="mt-4 flex items-center space-x-3">
       <RadioGroupOption

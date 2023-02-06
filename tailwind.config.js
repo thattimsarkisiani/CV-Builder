@@ -57,7 +57,7 @@ module.exports = {
         print: { raw: 'print' }
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+        sans: ['FiraGo', ...defaultTheme.fontFamily.sans]
       }
     }
   },

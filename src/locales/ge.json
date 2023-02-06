@@ -1,0 +1,52 @@
+{
+  "ui": {
+    "download": "გადმოწერა",
+    "edit": "რედაქტირება",
+    "add": "ატვირთვა",
+    "addElement": "მოდულის დამატება",
+    "close": "დახურვა",
+    "save": "შენახვა",
+    "addPhoto": "სურათის ატვირთვა",
+    "replace": "ჩანაცვლება",
+    "switchLang": "EN",
+    "about": "პროექტის შესახებ",
+    "startOver": "გადატვირთვა",
+    "design": "დიზაინი",
+    "content": "ინფორმაცია",
+    "languageLabel": "ენის შეცვლა"
+  },
+  "resume": {
+    "firstName": "სახელი",
+    "lastName": "გვარი",
+    "title": "სათაური",
+    "summary": "აღწერა",
+    "email": "ელ. ფოსტა",
+    "phone": "ტელეფონი",
+    "address": "მისამართი",
+    "more": "დამატებითი ინფორმაცია",
+    "section": {
+      "title": {
+        "employmentHistory": "გამოცდილება",
+        "links": "ბმულები",
+        "skills": "უნარები",
+        "education": "განათლება",
+        "hobbies": "ჰობი",
+        "photo": "სურათი"
+      },
+      "fields": {
+        "beginDate": "დაწყების თარიღი",
+        "endDate": "დასრულების თარიღი",
+        "employer": "დამსაქმებელი",
+        "city": "ქალაქი",
+        "description": "აღწერა",
+        "jobTitle": "თანამდებობა",
+        "school": "დაწესებულება",
+        "label": "აღწერა",
+        "link": "ბმული",
+        "degree": "ხარისხი",
+        "hobbies": "ჰობი",
+        "skill": "უნარი"
+      }
+    }
+  }
+}

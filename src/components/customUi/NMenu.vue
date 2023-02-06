@@ -113,7 +113,7 @@ export default {
     })
     const languages = [
       { label: 'EN', value: 'en' },
-      { label: 'FR', value: 'fr' }
+      { label: 'GE', value: 'ge' }
     ]
 
     return {
