@@ -29,7 +29,7 @@
     "section": {
       "title": {
         "employmentHistory": "გამოცდილება",
-        "links": "ბმულები",
+        "links": "ლინკები",
         "skills": "უნარები",
         "education": "განათლება",
         "hobbies": "ჰობი",
@@ -43,8 +43,8 @@
         "description": "აღწერა",
         "jobTitle": "თანამდებობა",
         "school": "დაწესებულება",
-        "label": "აღწერა",
-        "link": "ბმული",
+        "label": "დასახელება",
+        "link": "ლინკი",
         "degree": "ხარისხი",
         "hobbies": "ჰობი",
         "skill": "უნარი"

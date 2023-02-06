@@ -2,7 +2,7 @@
   <div class="relative min-h-full">
     <div
       ref="preview"
-      class="select-none cursor-move shadow-xl print:shadow-none flex flex-col p-4"
+      class="select-none cursor-move shadow-xl print:shadow-none flex flex-col p-4 rounded-lg"
       :style="!print ? `width: 529px; min-height: 748px; background: ${background}` : 'width: 210mm; min-height: 297mm;'"
     >
       <div class="space-y-4 flex">

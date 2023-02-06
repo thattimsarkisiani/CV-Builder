@@ -15,7 +15,7 @@
           :theme="theme"
         />
       </div>
-      <div class="w-full lg:w-1/2 flex flex-col flex-1">
+      <div class="overflow:hidden w-full lg:w-1/2 flex flex-col flex-1" >
         <n-tabs
           :active-tab="activeTab"
           :tabs="tabs"

@@ -6,7 +6,7 @@
       <div class="inline-flex shadow-sm rounded-xl divide-x divide-brand-600">
         <div class="relative z-0 inline-flex shadow-sm rounded-xl divide-x divide-brand-600">
           <button
-            class="relative inline-flex items-center text-sm font-medium flex space-x-2 py-2 pl-3 pr-4 border border-transparent rounded-l-lg shadow-sm text-white"
+            class="relative inline-flex items-center text-sm font-medium flex space-x-2 py-2.5 pl-3 pr-4 border border-transparent rounded-l-xl shadow-sm text-white"
             :disabled="!isValidResume"
             :class="isValidResume ? 'bg-brand-500 hover:bg-brand-600 focus:outline-none' : 'cursor-default bg-brand-400'"
             @click="exportToPdf"
@@ -14,7 +14,7 @@
             <n-icon icon="download" />
             <span>{{ t('ui.download') }}</span>
           </button>
-          <ListboxButton class="relative outline: none; inline-flex items-center bg-brand-500 p-2 rounded-l-none rounded-r-lg text-sm font-medium text-white hover:bg-brand-600 focus:outline-none ">
+          <ListboxButton class="relative outline: none; inline-flex items-center bg-brand-500 p-2 rounded-l-none rounded-r-xl text-sm font-medium text-white hover:bg-brand-600 focus:outline-none ">
             <n-icon icon="chevron-down" />
           </ListboxButton>
         </div>
