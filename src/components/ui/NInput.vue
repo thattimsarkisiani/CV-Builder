@@ -86,7 +86,7 @@ export default {
     })
 
     const rootClasses = computed(() => {
-      return 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md placeholder-gray-300 border-gray-300'
+      return 'shadow-sm focus:ring-brand-500 focus:border-brand-500 block w-full sm:text-sm border-gray-300 rounded-lg placeholder-gray-300 border-gray-300'
     })
 
     return {

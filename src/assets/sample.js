@@ -61,24 +61,24 @@ export const sample = {
         'Intégration et développement sur Django CMS / Symfony (VueJs, OpenLayers).' +
         'Conception UX/UI (Figma).'
     },
-    {
-      id: 4,
-      beginDate: '2016',
-      endDate: '2018',
-      title: 'Journaliste web',
-      company: 'La Provence',
-      description:
-        'Rédaction, production de modules éditoriaux (Data journalisme, infographies).'
-    },
-    {
-      id: 5,
-      beginDate: '2011',
-      endDate: '2015',
-      title: 'Chef de Projet numérique',
-      company: 'La Provence',
-      description:
-        'En charge de projets numériques : web, mobiles, applications, réseaux sociaux...'
-    },
+    // {
+    //   id: 4,
+    //   beginDate: '2016',
+    //   endDate: '2018',
+    //   title: 'Journaliste web',
+    //   company: 'La Provence',
+    //   description:
+    //     'Rédaction, production de modules éditoriaux (Data journalisme, infographies).'
+    // },
+    // {
+    //   id: 5,
+    //   beginDate: '2011',
+    //   endDate: '2015',
+    //   title: 'Chef de Projet numérique',
+    //   company: 'La Provence',
+    //   description:
+    //     'En charge de projets numériques : web, mobiles, applications, réseaux sociaux...'
+    // },
     // {
     //   id: 6,
     //   beginDate: '2007',

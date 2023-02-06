@@ -7,20 +7,24 @@
     <div class="flex items-center justify-center min-h-screen">
       <Dialog-overlay class="fixed inset-0 bg-gray-800 opacity-75" />
       <div
-        class="relative flex flex-col inline-block bg-white sm:rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl sm:my-8 w-screen h-screen sm:h-auto sm:max-w-lg sm:w-full sm:p-6 space-y-4"
+        class="relative flex flex-col inline-block bg-white sm:rounded-2xl px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl sm:my-8 w-screen h-screen sm:h-auto sm:max-w-lg sm:w-full sm:p-6 space-y-4"
       >
-        <n-button
+        <!-- <n-button
           icon="x"
           theme="transparent"
+          style="outline:0 !important;"
           class="absolute right-2 top-2"
           @click="setIsOpen(false)"
-        />
-        <Dialog-title
+        /> -->
+        <!-- <h2 class="text-xl font-bold">
+          Hi!
+      </h2> -->
+        <!-- <Dialog-title
           as="h3"
           class="text-lg leading-6 font-medium text-gray-900"
         >
           <slot name="header" />
-        </Dialog-title>
+        </Dialog-title> -->
         <div
           v-if="hasSlot('body')"
           class="flex-grow"

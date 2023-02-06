@@ -6,7 +6,7 @@
       </h2>
       <n-radio-group />
 
-      <!--      <div-->
+           <!-- <div-->
       <!--        class="grid grid-cols-3 w-full shadow rounded-lg h-30 overflow-hidden"-->
       <!--      >-->
       <!--        <div class="col-span-2 flex flex-col p-2 space-y-2">-->
@@ -24,7 +24,7 @@
       <!--          <div class="bg-white w-1/3 h-1" />-->
       <!--          <div class="bg-white w-1/3 h-1" />-->
       <!--        </div>-->
-      <!--      </div>-->
+      <!--      </div> -->
     </div>
   </div>
 </template>

@@ -8,12 +8,12 @@
         v-if="!!resume.avatar"
         :src="resume.avatar"
         alt=""
-        class="w-16 h-16 print:w-24 print:h-24 rounded-full"
+        class="w-20 h-20 print:w-24 print:h-24 rounded-full"
       >
       <div class="flex-1">
         <div
           v-if="resume.firstName || resume.lastName"
-          class="text-pxl font-semibold print:text-xl w-full print:leading-5"
+          class="text-p3xl font-semibold print:text-3xl w-full print:leading-5"
         >
           {{ resume.firstName }} {{ resume.lastName }}
         </div>
@@ -23,7 +23,7 @@
         />
         <div
           v-if="resume.title"
-          class="text-pxl print:text-3xl font-extrabold w-full"
+          class="text-xs print:text-xl font-medium w-full"
           :style="'color:' + theme.color"
         >
           {{ resume.title }}
@@ -38,14 +38,18 @@
       </div>
     </div>
   </div>
+  
   <div
     v-else-if="resumeKey === 'contact'"
-    class="text-pxs print:text-sm w-full"
+    class="text-psm print:text-sm w-full space-x-1"
   >
     <div
       v-if="resume.phone || resume.email || resume.address || resume.more"
-      class="space-y-1"
+      class="space-y-2"
     >
+    <!-- <div class="font-bold text-plg print:text-xl">
+      {{ resume.contacts }}
+    </div> -->
       <div v-if="resume.phone">
         {{ resume.phone }}
       </div>
@@ -55,9 +59,9 @@
       <div v-if="resume.address">
         {{ resume.address }}
       </div>
-      <div v-if="resume.more">
+      <!-- <div v-if="resume.more">
         {{ resume.more }}
-      </div>
+      </div> -->
     </div>
     <n-placeholder
       v-else

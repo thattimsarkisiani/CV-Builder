@@ -5,7 +5,7 @@
       class="select-none cursor-move shadow-xl print:shadow-none flex flex-col p-4"
       :style="!print ? `width: 529px; min-height: 748px; background: ${background}` : 'width: 210mm; min-height: 297mm;'"
     >
-      <div class="flex">
+      <div class="space-y-4 flex">
         <div class="w-2/3 p-4">
           <preview-header
             resume-key="title"
@@ -14,7 +14,7 @@
             :theme="theme"
           />
         </div>
-        <div class="w-1/3 text-white p-4">
+        <div class="space-y-4 w-1/3 text-white p-4">
           <preview-header
             resume-key="contact"
             :resume="resume"

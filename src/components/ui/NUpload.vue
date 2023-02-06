@@ -2,7 +2,7 @@
   <h3 class="block text-xl font-bold">
     {{ t('resume.section.title.photo') }}
   </h3>
-  <div class="mt-1 flex items-center space-x-2">
+  <div class="mt-1 flex items-center space-x-4">
     <img
       v-if="!!image"
       class="inline-block h-16 w-16 shadow-sm rounded-full"
@@ -12,7 +12,7 @@
     <n-icon
       v-else
       icon="user-circle-outline"
-      size="h-12 w-12"
+      size="h-16 w-16"
       color="text-gray-300"
     />
     <div class="flex space-x-2">
@@ -34,7 +34,7 @@
   <n-dialog v-model:open="open">
     <template #body>
       <div
-        class="flex justify-center items-center p-6"
+        class="flex justify-center items-center p-5"
         :class="!tempImage && 'h-72 border border-dashed rounded-lg border-gray-200'"
       >
         <div class="relative">

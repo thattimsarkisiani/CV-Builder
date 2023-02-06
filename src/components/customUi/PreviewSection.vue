@@ -10,32 +10,31 @@
       <div
         v-for="item in resume[resumeKey]"
         :key="item.id"
-        class="text-pxs print:text-sm print:leading-4 space-y-1"
+        class="text-psm print:text-sm print:leading-4 space-y-1"
         style="break-inside: avoid;"
       >
+
         <template v-if="resumeKey === 'experience'">
           <div class="text-gray-800 text-psm print:text-sm font-bold">
-            {{ item.title }}, {{ item.company }}
-          </div>
-          <div class="text-gray-600 font-semibold">
-            {{ item.beginDate }}<span v-if="!!item.endDate"> - {{ item.endDate }}</span>
+            {{ item.title }}, {{ item.company }} <span class="text-gray-600 font-semibold"> | {{ item.beginDate }}<span v-if="!!item.endDate"> - {{ item.endDate }}</span></span>
           </div>
           <div class="text-gray-800 whitespace-pre-line">
             {{ item.description }}
           </div>
         </template>
+
         <template v-else-if="resumeKey === 'education'">
           <div class="text-gray-800 text-psm print:text-sm font-bold">
-            {{ item.degree }}
+            {{ item.degree }} <span class="text-gray-600 font-semibold"> | {{ item.beginDate }}<span v-if="!!item.endDate"> - {{ item.endDate }}</span></span>
           </div>
           <div class="text-gray-600">
-            {{ item.beginDate }}<span v-if="!!item.endDate"> / {{ item.endDate }}</span>
-            {{ item.school }} ({{ item.city }})
+            {{ item.school }} <span class="text-gray-600 font-normal"> - {{ item.city }}</span>
           </div>
           <div class="text-gray-800 whitespace-pre-line">
             {{ item.description }}
           </div>
         </template>
+
         <template v-else-if="resumeKey === 'skill'">
           {{ item.label }}
         </template>
