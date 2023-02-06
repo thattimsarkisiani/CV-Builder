@@ -73,12 +73,12 @@ const state = reactive({
           type: 'text',
           placeholder: computed(() => t('resume.address'))
         },
-        // {
-        //   component: 'input',
-        //   key: 'more',
-        //   type: 'textarea',
-        //   placeholder: computed(() => t('resume.more'))
-        // }
+        {
+          component: 'input',
+          key: 'more',
+          type: 'textarea',
+          placeholder: computed(() => t('resume.more'))
+        }
       ]
     },
     education: {

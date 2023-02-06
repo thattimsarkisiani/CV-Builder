@@ -10,7 +10,7 @@
           
           class="animate-pulse text-white w-8 h-8"
         /> -->
-        <img src="https://www.linkpicture.com/q/logo_49.svg" width="150">
+        <img src="https://www.linkpicture.com/q/fogo.svg" width="150">
       </div>
     </div>
   </transition>
