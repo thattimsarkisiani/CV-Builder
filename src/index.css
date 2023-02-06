@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500,600,700,800,900');
+
 .ghost-class {
   @apply border border-dashed rounded-md border-gray-200;
 }
