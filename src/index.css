@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ghost-class {
+  @apply border border-dashed rounded-md border-gray-200;
+}
+
+.list-enter-active,
+.list-leave-active,
+.list-move {
+  transition: 500ms cubic-bezier(0.59, 0.12, 0.34, 0.95);
+  transition-property: opacity, transform;
+}
+
+.list-enter {
+  opacity: 0;
+  transform: translateX(50px) scaleY(0.5);
+}
+
+.list-enter-to {
+  opacity: 1;
+  transform: translateX(0) scaleY(1);
+}
+
+.list-leave-active {
+  opacity: 1;
+  transform: translateX(0) scaleY(1);
+}
+
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(20vw) scaleY(0.5);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-shrink-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.fade-shrink-enter,
+.fade-shrink-enter-from,
+.fade-shrink-leave-to {
+  opacity: 0;
+  transform: translateY(0) scale(0.95);
+}
+
+.fade-shrink-leave-from,
+.fade-shrink-enter-to {
+  opacity: 100;
+  transform: translateY(0) scale(1);
+}
+
+.fade-shrink-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

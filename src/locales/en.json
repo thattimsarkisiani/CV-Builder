@@ -1,0 +1,53 @@
+{
+  "ui": {
+    "download": "Download",
+    "edit": "Edit",
+    "add": "Add",
+    "addElement": "Add Additional Element",
+    "close": "Close",
+    "save": "Save",
+    "addPhoto": "Upload your photo",
+    "replace": "Replace",
+    "switchLang": "FR",
+    "about": "About",
+    "startOver": "Start Over",
+    "design": "Design",
+    "content": "Content",
+    "languageLabel": "Change Language",
+    "pdfGeneration": "PDF generation"
+  },
+  "resume": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "title": "Job Title",
+    "summary": "Summary",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "more": "More Details",
+    "section": {
+      "title": {
+        "employmentHistory": "Employment History",
+        "links": "Links",
+        "skills": "Skills",
+        "education": "Education",
+        "hobbies": "Hobbies",
+        "photo": "Photo"
+      },
+      "fields": {
+        "beginDate": "Start Date",
+        "endDate": "End Date",
+        "employer": "Employer",
+        "city": "City",
+        "description": "Description",
+        "jobTitle": "Job Title",
+        "school": "School",
+        "label": "Label",
+        "link": "Link",
+        "degree": "Degree",
+        "hobbies": "Hobbies",
+        "skill": "Skill"
+      }
+    }
+  }
+}
