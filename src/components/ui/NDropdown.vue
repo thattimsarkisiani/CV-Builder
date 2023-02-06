@@ -24,14 +24,14 @@
         leave-to-class="transform scale-95 opacity-0"
       >
         <MenuItems
-          class="absolute right-0 w-56 mt-2 p-1 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="absolute right-0 w-56 mt-2 p-1 origin-top-right bg-white divide-y divide-gray-100 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
           <MenuItem v-slot="{ active }">
             <button
               class="space-x-2"
               :class="[
                 active ? 'bg-brand-500 text-white' : 'text-gray-700',
-                'group flex rounded-md items-center w-full px-2 py-2 text-sm',
+                'group flex rounded-lg items-center w-full px-2 py-2 text-sm',
               ]"
               @click="setLocale"
             >
@@ -44,7 +44,7 @@
               class="space-x-2"
               :class="[
                 active ? 'bg-brand-500 text-white' : 'text-gray-700',
-                'group flex rounded-md items-center w-full px-2 py-2 text-sm',
+                'group flex rounded-lg items-center w-full px-2 py-2 text-sm',
               ]"
               @click="addsample"
             >
@@ -57,7 +57,7 @@
               class="space-x-2"
               :class="[
                 active ? 'bg-brand-500 text-white' : 'text-gray-700',
-                'group flex rounded-md items-center w-full px-2 py-2 text-sm',
+                'group flex rounded-lg items-center w-full px-2 py-2 text-sm',
               ]"
               @click="setNewResume"
             >

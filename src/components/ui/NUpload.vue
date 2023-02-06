@@ -47,7 +47,7 @@
             id="user-photo"
             name="user-photo"
             type="file"
-            class="absolute inset-0 w-full h-full opacity-0 cursor-pointer border-gray-300 rounded-md"
+            class="absolute inset-0 w-full h-full opacity-0 cursor-pointer border-gray-300 rounded-lg"
             accept="image/*"
             @change="uploadImage"
           >

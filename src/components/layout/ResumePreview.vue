@@ -145,22 +145,23 @@ export default {
 }
 </script>
 
-<!--<style scoped>-->
+<style scoped>
 
-<!--@media print {-->
-<!--  @page {-->
-<!--    size: A4;-->
-<!--    margin: 0;-->
-<!--  }-->
+/* აქ! */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
 
-<!--  html, body {-->
-<!--    width: 210mm;-->
-<!--    height: 297mm;-->
-<!--    background: v-bind(background);-->
-<!--  }-->
-<!--}-->
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    background: v-bind(background);
+  }
+}
 
-<!--</style>-->
+</style>
 
 
 /* hide scrollbar but allow scrolling */

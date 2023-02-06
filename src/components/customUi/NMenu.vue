@@ -26,7 +26,7 @@
         leave-to-class="opacity-0"
       >
         <ListboxOptions
-          class="origin-top-right absolute z-10 right-0 mt-2 w-72 rounded-lg shadow-lg overflow-hidden bg-white divide-y divide-gray-200 focus:outline-none"
+          class="origin-top-right absolute z-10 right-0 mt-2 w-72 rounded-xl shadow-lg overflow-hidden bg-white divide-y divide-gray-200 focus:outline-none"
         >
           <ListboxOption
             v-for="option in items"
@@ -65,7 +65,7 @@
                   :value="option.value"
                 >
                   <div
-                    class="cursor-pointer border rounded-lg py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
+                    class="cursor-pointer border rounded-xl py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                     :class="[
                       checked ? 'bg-brand-600 border-transparent text-white hover:bg-brand-700' : 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50']"
                   >
@@ -114,7 +114,7 @@ export default {
       ]
     })
 
-    const url = "https:/google.com"
+    // const url = "https:/google.com"
 
     const languages = [
       { label: 'GEO', value: 'ge' },

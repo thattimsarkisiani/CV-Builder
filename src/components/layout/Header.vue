@@ -6,7 +6,7 @@
         class="text-brand-600 group-hover:text-gray-800"
       /> -->
       <div class="text-brand-600 font-extrabold text-3xl group-hover:text-gray-800">
-        <img src="https://www.linkpicture.com/q/logo_47.svg" width="150">
+        <img src="https://www.linkpicture.com/q/logo_49.svg" width="150">
         <!-- Immersive<span class="text-gray-800 font-normal group-hover:text-brand-600">&nbsp;CV</span> -->
       </div>
     </div>
@@ -19,12 +19,14 @@
 <script>
 import NIcon from '../ui/NIcon.vue'
 import NMenu from '../customUi/NMenu.vue'
+import NMenu1 from '../ui/NMenu1.vue'
 
 export default {
   name: 'Header',
   components: {
     NMenu,
-    NIcon
+    NIcon,
+    NMenu1
   }
 }
 </script>

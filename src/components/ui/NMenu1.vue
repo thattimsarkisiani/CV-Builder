@@ -1,9 +1,9 @@
 <template>
   <Menu as="div">
     <Menu-button>Télécharger</Menu-button>
-    <!--    <MenuButton as="template">-->
-    <!--      <n-button icon="download" label="Télécharger" />-->
-    <!--    </MenuButton>-->
+       <MenuButton as="template">
+         <n-button icon="download" label="Télécharger" />
+       </MenuButton>
     <Menu-items as="ul">
       <Menu-item
         v-slot="{ active }"
