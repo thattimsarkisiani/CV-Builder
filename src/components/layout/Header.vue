@@ -6,7 +6,7 @@
         class="text-brand-600 group-hover:text-gray-800"
       /> -->
       <div class="text-brand-600 font-extrabold text-3xl group-hover:text-gray-800">
-        <img src="https://www.linkpicture.com/q/lofo.svg" width="150">
+        <img src="https://www.linkpicture.com/q/logo_55.svg" height="45">
         <!-- Immersive<span class="text-gray-800 font-normal group-hover:text-brand-600">&nbsp;CV</span> -->
       </div>
     </div>
